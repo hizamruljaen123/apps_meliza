@@ -1,0 +1,1168 @@
+2024-06-08 13:07:50,229 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:07:50,229 - Training accuracy: 1.0
+2024-06-08 13:07:50,230 - Test accuracy: 0.5
+2024-06-08 13:07:50,232 - Classification report:
+               precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         1
+           1       0.67      0.67      0.67         3
+
+    accuracy                           0.50         4
+   macro avg       0.33      0.33      0.33         4
+weighted avg       0.50      0.50      0.50         4
+
+2024-06-08 13:08:20,612 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:08:20,613 - Training accuracy: 1.0
+2024-06-08 13:08:20,613 - Test accuracy: 0.5
+2024-06-08 13:08:20,615 - Classification report:
+               precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         1
+           1       0.67      0.67      0.67         3
+
+    accuracy                           0.50         4
+   macro avg       0.33      0.33      0.33         4
+weighted avg       0.50      0.50      0.50         4
+
+2024-06-08 13:09:09,843 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:09:09,843 - Training accuracy: 1.0
+2024-06-08 13:09:09,843 - Test accuracy: 0.5
+2024-06-08 13:09:09,850 - Classification report:
+               precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         1
+           1       0.67      0.67      0.67         3
+
+    accuracy                           0.50         4
+   macro avg       0.33      0.33      0.33         4
+weighted avg       0.50      0.50      0.50         4
+
+2024-06-08 13:09:38,449 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:09:38,449 - Training accuracy: 1.0
+2024-06-08 13:09:38,449 - Test accuracy: 0.5
+2024-06-08 13:09:38,452 - Classification report:
+               precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         1
+           1       0.67      0.67      0.67         3
+
+    accuracy                           0.50         4
+   macro avg       0.33      0.33      0.33         4
+weighted avg       0.50      0.50      0.50         4
+
+2024-06-08 13:10:03,815 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:10:03,816 - Training accuracy: 1.0
+2024-06-08 13:10:03,816 - Test accuracy: 0.5
+2024-06-08 13:10:03,819 - Classification report:
+               precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         1
+           1       0.67      0.67      0.67         3
+
+    accuracy                           0.50         4
+   macro avg       0.33      0.33      0.33         4
+weighted avg       0.50      0.50      0.50         4
+
+2024-06-08 13:13:24,082 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:13:24,083 - Training accuracy: 1.0
+2024-06-08 13:13:24,083 - Test accuracy: 0.75
+2024-06-08 13:13:24,085 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:49,313 - Training accuracy: 1.0
+2024-06-08 13:14:49,313 - Test accuracy: 0.75
+2024-06-08 13:14:49,313 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:49,313 - Iteration 1: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:49,326 - Training accuracy: 1.0
+2024-06-08 13:14:49,326 - Test accuracy: 0.75
+2024-06-08 13:14:49,326 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:49,326 - Iteration 2: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:49,332 - Training accuracy: 1.0
+2024-06-08 13:14:49,332 - Test accuracy: 0.75
+2024-06-08 13:14:49,332 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:49,332 - Iteration 3: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:49,342 - Training accuracy: 1.0
+2024-06-08 13:14:49,342 - Test accuracy: 0.75
+2024-06-08 13:14:49,342 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:49,342 - Iteration 4: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:49,348 - Training accuracy: 1.0
+2024-06-08 13:14:49,349 - Test accuracy: 0.75
+2024-06-08 13:14:49,349 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:49,349 - Iteration 5: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:49,355 - Training accuracy: 1.0
+2024-06-08 13:14:49,355 - Test accuracy: 0.75
+2024-06-08 13:14:49,355 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:49,356 - Iteration 6: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:49,361 - Training accuracy: 1.0
+2024-06-08 13:14:49,361 - Test accuracy: 0.75
+2024-06-08 13:14:49,361 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:49,361 - Iteration 7: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:49,368 - Training accuracy: 1.0
+2024-06-08 13:14:49,368 - Test accuracy: 0.75
+2024-06-08 13:14:49,368 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:49,368 - Iteration 8: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:49,373 - Training accuracy: 1.0
+2024-06-08 13:14:49,373 - Test accuracy: 0.75
+2024-06-08 13:14:49,373 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:49,373 - Iteration 9: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:49,380 - Training accuracy: 1.0
+2024-06-08 13:14:49,380 - Test accuracy: 0.75
+2024-06-08 13:14:49,380 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:49,380 - Iteration 10: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,405 - Training accuracy: 1.0
+2024-06-08 13:14:59,405 - Test accuracy: 0.75
+2024-06-08 13:14:59,405 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,405 - Iteration 1: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,409 - Training accuracy: 1.0
+2024-06-08 13:14:59,409 - Test accuracy: 0.75
+2024-06-08 13:14:59,409 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,409 - Iteration 2: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,416 - Training accuracy: 1.0
+2024-06-08 13:14:59,416 - Test accuracy: 0.75
+2024-06-08 13:14:59,416 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,416 - Iteration 3: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,424 - Training accuracy: 1.0
+2024-06-08 13:14:59,424 - Test accuracy: 0.75
+2024-06-08 13:14:59,424 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,424 - Iteration 4: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,431 - Training accuracy: 1.0
+2024-06-08 13:14:59,431 - Test accuracy: 0.75
+2024-06-08 13:14:59,431 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,431 - Iteration 5: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,436 - Training accuracy: 1.0
+2024-06-08 13:14:59,436 - Test accuracy: 0.75
+2024-06-08 13:14:59,436 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,436 - Iteration 6: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,441 - Training accuracy: 1.0
+2024-06-08 13:14:59,441 - Test accuracy: 0.75
+2024-06-08 13:14:59,441 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,441 - Iteration 7: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,447 - Training accuracy: 1.0
+2024-06-08 13:14:59,447 - Test accuracy: 0.75
+2024-06-08 13:14:59,447 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,447 - Iteration 8: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,455 - Training accuracy: 1.0
+2024-06-08 13:14:59,455 - Test accuracy: 0.75
+2024-06-08 13:14:59,455 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,455 - Iteration 9: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,460 - Training accuracy: 1.0
+2024-06-08 13:14:59,460 - Test accuracy: 0.75
+2024-06-08 13:14:59,460 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,460 - Iteration 10: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,466 - Training accuracy: 1.0
+2024-06-08 13:14:59,467 - Test accuracy: 0.75
+2024-06-08 13:14:59,467 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,467 - Iteration 11: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,471 - Training accuracy: 1.0
+2024-06-08 13:14:59,472 - Test accuracy: 0.75
+2024-06-08 13:14:59,472 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,472 - Iteration 12: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,478 - Training accuracy: 1.0
+2024-06-08 13:14:59,478 - Test accuracy: 0.75
+2024-06-08 13:14:59,478 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,478 - Iteration 13: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,485 - Training accuracy: 1.0
+2024-06-08 13:14:59,485 - Test accuracy: 0.75
+2024-06-08 13:14:59,485 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,485 - Iteration 14: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,490 - Training accuracy: 1.0
+2024-06-08 13:14:59,490 - Test accuracy: 0.75
+2024-06-08 13:14:59,490 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,490 - Iteration 15: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,495 - Training accuracy: 1.0
+2024-06-08 13:14:59,495 - Test accuracy: 0.75
+2024-06-08 13:14:59,495 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,495 - Iteration 16: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,502 - Training accuracy: 1.0
+2024-06-08 13:14:59,502 - Test accuracy: 0.75
+2024-06-08 13:14:59,502 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,502 - Iteration 17: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,507 - Training accuracy: 1.0
+2024-06-08 13:14:59,507 - Test accuracy: 0.75
+2024-06-08 13:14:59,507 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,507 - Iteration 18: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,513 - Training accuracy: 1.0
+2024-06-08 13:14:59,513 - Test accuracy: 0.75
+2024-06-08 13:14:59,513 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,513 - Iteration 19: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:14:59,521 - Training accuracy: 1.0
+2024-06-08 13:14:59,521 - Test accuracy: 0.75
+2024-06-08 13:14:59,521 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:14:59,521 - Iteration 20: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:16:41,890 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:16:41,890 - Training accuracy: 1.0
+2024-06-08 13:16:41,890 - Test accuracy: 0.75
+2024-06-08 13:16:41,890 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:16:41,890 - Iteration 1: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:16:41,896 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:16:41,896 - Training accuracy: 1.0
+2024-06-08 13:16:41,896 - Test accuracy: 0.75
+2024-06-08 13:16:41,896 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:16:41,896 - Iteration 2: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:16:41,901 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:16:41,901 - Training accuracy: 1.0
+2024-06-08 13:16:41,901 - Test accuracy: 0.75
+2024-06-08 13:16:41,901 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:16:41,901 - Iteration 3: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:16:41,908 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:16:41,908 - Training accuracy: 1.0
+2024-06-08 13:16:41,908 - Test accuracy: 0.75
+2024-06-08 13:16:41,908 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:16:41,908 - Iteration 4: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:16:41,914 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:16:41,914 - Training accuracy: 1.0
+2024-06-08 13:16:41,914 - Test accuracy: 0.75
+2024-06-08 13:16:41,914 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:16:41,914 - Iteration 5: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:16:41,921 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:16:41,921 - Training accuracy: 1.0
+2024-06-08 13:16:41,921 - Test accuracy: 0.75
+2024-06-08 13:16:41,921 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:16:41,921 - Iteration 6: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:16:41,930 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:16:41,930 - Training accuracy: 1.0
+2024-06-08 13:16:41,930 - Test accuracy: 0.75
+2024-06-08 13:16:41,930 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:16:41,930 - Iteration 7: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:16:41,936 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:16:41,936 - Training accuracy: 1.0
+2024-06-08 13:16:41,937 - Test accuracy: 0.75
+2024-06-08 13:16:41,937 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:16:41,937 - Iteration 8: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:16:41,945 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:16:41,945 - Training accuracy: 1.0
+2024-06-08 13:16:41,945 - Test accuracy: 0.75
+2024-06-08 13:16:41,945 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:16:41,945 - Iteration 9: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:16:41,951 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:16:41,951 - Training accuracy: 1.0
+2024-06-08 13:16:41,951 - Test accuracy: 0.75
+2024-06-08 13:16:41,951 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:16:41,951 - Iteration 10: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:17:49,104 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:17:49,104 - Training accuracy: 1.0
+2024-06-08 13:17:49,104 - Test accuracy: 0.75
+2024-06-08 13:17:49,104 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:17:49,104 - Iteration 1: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:17:49,109 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:17:49,109 - Training accuracy: 1.0
+2024-06-08 13:17:49,109 - Test accuracy: 0.75
+2024-06-08 13:17:49,109 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:17:49,109 - Iteration 2: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:17:49,117 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:17:49,117 - Training accuracy: 1.0
+2024-06-08 13:17:49,117 - Test accuracy: 0.75
+2024-06-08 13:17:49,117 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:17:49,117 - Iteration 3: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:17:49,130 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:17:49,130 - Training accuracy: 1.0
+2024-06-08 13:17:49,130 - Test accuracy: 0.75
+2024-06-08 13:17:49,130 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:17:49,130 - Iteration 4: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:17:49,137 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:17:49,137 - Training accuracy: 1.0
+2024-06-08 13:17:49,137 - Test accuracy: 0.75
+2024-06-08 13:17:49,137 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:17:49,137 - Iteration 5: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:17:49,143 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:17:49,143 - Training accuracy: 1.0
+2024-06-08 13:17:49,143 - Test accuracy: 0.75
+2024-06-08 13:17:49,143 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:17:49,143 - Iteration 6: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:17:49,149 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:17:49,149 - Training accuracy: 1.0
+2024-06-08 13:17:49,149 - Test accuracy: 0.75
+2024-06-08 13:17:49,149 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:17:49,149 - Iteration 7: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:17:49,154 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:17:49,154 - Training accuracy: 1.0
+2024-06-08 13:17:49,154 - Test accuracy: 0.75
+2024-06-08 13:17:49,154 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:17:49,154 - Iteration 8: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:17:49,160 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:17:49,160 - Training accuracy: 1.0
+2024-06-08 13:17:49,160 - Test accuracy: 0.75
+2024-06-08 13:17:49,160 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:17:49,160 - Iteration 9: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:17:49,165 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:17:49,165 - Training accuracy: 1.0
+2024-06-08 13:17:49,165 - Test accuracy: 0.75
+2024-06-08 13:17:49,165 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:17:49,165 - Iteration 10: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:19:00,851 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:19:00,851 - Training accuracy: 1.0
+2024-06-08 13:19:00,851 - Test accuracy: 0.75
+2024-06-08 13:19:00,851 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:19:00,851 - Iteration 1: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:19:00,858 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:19:00,858 - Training accuracy: 1.0
+2024-06-08 13:19:00,858 - Test accuracy: 0.75
+2024-06-08 13:19:00,858 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:19:00,858 - Iteration 2: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:19:00,863 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:19:00,863 - Training accuracy: 1.0
+2024-06-08 13:19:00,863 - Test accuracy: 0.75
+2024-06-08 13:19:00,863 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:19:00,863 - Iteration 3: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:19:00,869 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:19:00,869 - Training accuracy: 1.0
+2024-06-08 13:19:00,869 - Test accuracy: 0.75
+2024-06-08 13:19:00,869 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:19:00,869 - Iteration 4: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:19:00,878 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:19:00,879 - Training accuracy: 1.0
+2024-06-08 13:19:00,879 - Test accuracy: 0.75
+2024-06-08 13:19:00,879 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:19:00,879 - Iteration 5: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:19:00,884 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:19:00,884 - Training accuracy: 1.0
+2024-06-08 13:19:00,884 - Test accuracy: 0.75
+2024-06-08 13:19:00,884 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:19:00,884 - Iteration 6: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:19:00,891 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:19:00,891 - Training accuracy: 1.0
+2024-06-08 13:19:00,891 - Test accuracy: 0.75
+2024-06-08 13:19:00,891 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:19:00,891 - Iteration 7: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:19:00,897 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:19:00,897 - Training accuracy: 1.0
+2024-06-08 13:19:00,897 - Test accuracy: 0.75
+2024-06-08 13:19:00,897 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:19:00,897 - Iteration 8: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:19:00,903 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:19:00,903 - Training accuracy: 1.0
+2024-06-08 13:19:00,903 - Test accuracy: 0.75
+2024-06-08 13:19:00,903 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:19:00,903 - Iteration 9: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:19:00,909 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:19:00,909 - Training accuracy: 1.0
+2024-06-08 13:19:00,909 - Test accuracy: 0.75
+2024-06-08 13:19:00,909 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:19:00,909 - Iteration 10: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:20:24,247 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:20:24,247 - Training accuracy: 1.0
+2024-06-08 13:20:24,247 - Test accuracy: 0.75
+2024-06-08 13:20:24,247 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:20:24,247 - Iteration 1: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:20:24,252 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:20:24,252 - Training accuracy: 1.0
+2024-06-08 13:20:24,253 - Test accuracy: 0.75
+2024-06-08 13:20:24,253 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:20:24,253 - Iteration 2: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:20:24,265 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:20:24,265 - Training accuracy: 1.0
+2024-06-08 13:20:24,265 - Test accuracy: 0.75
+2024-06-08 13:20:24,265 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:20:24,265 - Iteration 3: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:20:24,271 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:20:24,271 - Training accuracy: 1.0
+2024-06-08 13:20:24,271 - Test accuracy: 0.75
+2024-06-08 13:20:24,271 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:20:24,271 - Iteration 4: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:20:24,277 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:20:24,278 - Training accuracy: 1.0
+2024-06-08 13:20:24,278 - Test accuracy: 0.75
+2024-06-08 13:20:24,278 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:20:24,278 - Iteration 5: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:20:24,283 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:20:24,283 - Training accuracy: 1.0
+2024-06-08 13:20:24,283 - Test accuracy: 0.75
+2024-06-08 13:20:24,283 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:20:24,283 - Iteration 6: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:20:24,288 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:20:24,288 - Training accuracy: 1.0
+2024-06-08 13:20:24,290 - Test accuracy: 0.75
+2024-06-08 13:20:24,290 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:20:24,290 - Iteration 7: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:20:24,296 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:20:24,296 - Training accuracy: 1.0
+2024-06-08 13:20:24,296 - Test accuracy: 0.75
+2024-06-08 13:20:24,296 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:20:24,296 - Iteration 8: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:20:24,301 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:20:24,303 - Training accuracy: 1.0
+2024-06-08 13:20:24,303 - Test accuracy: 0.75
+2024-06-08 13:20:24,303 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:20:24,303 - Iteration 9: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:20:24,313 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:20:24,313 - Training accuracy: 1.0
+2024-06-08 13:20:24,313 - Test accuracy: 0.75
+2024-06-08 13:20:24,313 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:20:24,313 - Iteration 10: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:24:41,512 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:24:41,512 - Training accuracy: 1.0
+2024-06-08 13:24:41,512 - Test accuracy: 0.75
+2024-06-08 13:24:41,512 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:24:41,512 - Iteration 1: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:24:41,517 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:24:41,517 - Training accuracy: 1.0
+2024-06-08 13:24:41,517 - Test accuracy: 0.75
+2024-06-08 13:24:41,517 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:24:41,517 - Iteration 2: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:24:41,525 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:24:41,525 - Training accuracy: 1.0
+2024-06-08 13:24:41,525 - Test accuracy: 0.75
+2024-06-08 13:24:41,525 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:24:41,525 - Iteration 3: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:24:41,531 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:24:41,531 - Training accuracy: 1.0
+2024-06-08 13:24:41,531 - Test accuracy: 0.75
+2024-06-08 13:24:41,531 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:24:41,531 - Iteration 4: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:24:41,535 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:24:41,535 - Training accuracy: 1.0
+2024-06-08 13:24:41,535 - Test accuracy: 0.75
+2024-06-08 13:24:41,535 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:24:41,535 - Iteration 5: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:24:41,542 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:24:41,542 - Training accuracy: 1.0
+2024-06-08 13:24:41,542 - Test accuracy: 0.75
+2024-06-08 13:24:41,542 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:24:41,542 - Iteration 6: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:24:41,548 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:24:41,548 - Training accuracy: 1.0
+2024-06-08 13:24:41,548 - Test accuracy: 0.75
+2024-06-08 13:24:41,548 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:24:41,548 - Iteration 7: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:24:41,557 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:24:41,557 - Training accuracy: 1.0
+2024-06-08 13:24:41,557 - Test accuracy: 0.75
+2024-06-08 13:24:41,557 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:24:41,557 - Iteration 8: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:24:41,562 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:24:41,562 - Training accuracy: 1.0
+2024-06-08 13:24:41,562 - Test accuracy: 0.75
+2024-06-08 13:24:41,562 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:24:41,562 - Iteration 9: Train accuracy = 1.0, Test accuracy = 0.75
+2024-06-08 13:24:41,567 - Model training complete with parameters: {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'linear', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': True}
+2024-06-08 13:24:41,567 - Training accuracy: 1.0
+2024-06-08 13:24:41,567 - Test accuracy: 0.75
+2024-06-08 13:24:41,567 - Classification report:
+               precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.67      1.00      0.80         2
+
+    accuracy                           0.75         4
+   macro avg       0.83      0.75      0.73         4
+weighted avg       0.83      0.75      0.73         4
+
+2024-06-08 13:24:41,567 - Iteration 10: Train accuracy = 1.0, Test accuracy = 0.75
