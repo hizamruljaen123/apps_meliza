@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request
 import pandas as pd
 import mysql.connector
 from sklearn.preprocessing import LabelEncoder, StandardScaler
@@ -162,57 +162,6 @@ def visualize_results(cm, accuracy, predictions, X_test, y_test, df, model, scal
         plt.close()
 
 
-def visualize_test_results(X_test, predictions, model, scaler, file_name):
-    # Reduksi dimensi menggunakan PCA
-    pca = PCA(n_components=2)
-    X_test_scaled = scaler.transform(X_test)
-    X_test_pca = pca.fit_transform(X_test_scaled)
-
-    # SVM Decision Boundary Visualization
-    plt.figure(figsize=(15, 10))
-    
-    # Create a mesh to plot in
-    x_min, x_max = X_test_pca[:, 0].min() - 1, X_test_pca[:, 0].max() + 1
-    y_min, y_max = X_test_pca[:, 1].min() - 1, X_test_pca[:, 1].max() + 1
-    xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.02),
-                         np.arange(y_min, y_max, 0.02))
-    
-    # Fit a new SVM model on PCA-transformed data
-    svm_pca = SVC(kernel='linear', random_state=42)
-    svm_pca.fit(X_test_pca, predictions)
-    
-    # Get the separating hyperplane
-    Z = svm_pca.decision_function(np.c_[xx.ravel(), yy.ravel()])
-    Z = Z.reshape(xx.shape)
-    
-    # Plot the decision boundary and margins
-    plt.contourf(xx, yy, Z, levels=[-1, 0, 1], alpha=0.5,
-                 colors=['#FFAAAA', '#AAAAFF'])
-    plt.contour(xx, yy, Z, colors=['red', 'black', 'blue'], linestyles=['--', '-', '--'], levels=[-1, 0, 1])
-    
-    # Plot the test points
-    scatter = plt.scatter(X_test_pca[:, 0], X_test_pca[:, 1], c=predictions, cmap=plt.cm.RdYlBu, edgecolor='black')
-    
-    # Plot the support vectors
-    plt.scatter(X_test_pca[svm_pca.support_, 0], X_test_pca[svm_pca.support_, 1], s=100,
-                linewidth=1, facecolors='none', edgecolors='k')
-    
-    plt.xlim(xx.min(), xx.max())
-    plt.ylim(yy.min(), yy.max())
-    plt.xlabel('PCA Component 1')
-    plt.ylabel('PCA Component 2')
-    plt.title('SVM Decision Boundary with Support Vectors (Test Data)')
-    plt.colorbar(scatter)
-    
-    # Add legend
-    handles, labels = scatter.legend_elements()
-    plt.legend(handles, ['Miskin', 'Miskin Ekstrim'], loc="upper right", title="Kategori")
-    
-    plt.tight_layout()
-    plt.savefig(os.path.join(GRAPH_PATH, f'{file_name}_svm_decision_boundary.png'))
-    plt.close()
-
-    return f'{file_name}_svm_decision_boundary.png'
 
 # The train function remains the same
 @app.route('/train', methods=['GET'])
@@ -260,6 +209,97 @@ def get_data_uji():
     df = pd.read_sql(query, conn)
     conn.close()
     return jsonify(df.to_dict(orient='records'))
+
+@app.route('/add_data_latih', methods=['POST'])
+def add_data_latih():
+    data = request.form
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query SQL untuk menambahkan data ke dalam tabel
+    sql = """INSERT INTO data_latih 
+             (Nama_Keluarga, Alamat, Kabupaten, Kecamatan, Pendapatan_Per_Bulan,
+              Jenis_Pekerjaan, Riwayat_Penyakit_Kronis, Tingkat_Pendidikan, 
+              Status_Kepemilikan_Rumah, Kehilangan_Mata_Pencaharian, 
+              Anggota_Keluarga_Rentan, Tidak_Menerima_Bantuan_Sosial, 
+              Rumah_Tangga_Lansia_Tunggal, Perempuan_Kepala_Keluarga, Kategori) 
+             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
+
+    # Mengambil data dari form dan memasukkannya ke dalam query
+    values = (
+        data['Nama_Keluarga'],
+        data['Alamat'],
+        data['Kabupaten'],
+        data['Kecamatan'],
+        data['Pendapatan_Per_Bulan'],
+        data['Jenis_Pekerjaan'],
+        data['Riwayat_Penyakit_Kronis'],
+        data['Tingkat_Pendidikan'],
+        data['Status_Kepemilikan_Rumah'],
+        data['Kehilangan_Mata_Pencaharian'],
+        data['Anggota_Keluarga_Rentan'],
+        data['Tidak_Menerima_Bantuan_Sosial'],
+        data['Rumah_Tangga_Lansia_Tunggal'],
+        data['Perempuan_Kepala_Keluarga'],
+        data['Kategori']
+    )
+
+    try:
+        # Menjalankan query dan commit perubahan
+        cursor.execute(sql, values)
+        conn.commit()
+        return jsonify({'message': 'Data berhasil disimpan!'}), 200
+    except Exception as e:
+        # Jika ada kesalahan, kembalikan pesan error
+        return jsonify({'error': str(e)}), 500
+    finally:
+        cursor.close()
+        conn.close()
+
+@app.route('/add_data_uji', methods=['POST'])
+def add_data_uji():
+    data = request.form
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Query SQL untuk menambahkan data ke dalam tabel
+    sql = """INSERT INTO data_uji 
+             (Nama_Keluarga, Alamat, Kabupaten, Kecamatan, Pendapatan_Per_Bulan,
+              Jenis_Pekerjaan, Riwayat_Penyakit_Kronis, Tingkat_Pendidikan, 
+              Status_Kepemilikan_Rumah, Kehilangan_Mata_Pencaharian, 
+              Anggota_Keluarga_Rentan, Tidak_Menerima_Bantuan_Sosial, 
+              Rumah_Tangga_Lansia_Tunggal, Perempuan_Kepala_Keluarga) 
+             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
+
+    # Mengambil data dari form dan memasukkannya ke dalam query
+    values = (
+        data['Nama_Keluarga'],
+        data['Alamat'],
+        data['Kabupaten'],
+        data['Kecamatan'],
+        data['Pendapatan_Per_Bulan'],
+        data['Jenis_Pekerjaan'],
+        data['Riwayat_Penyakit_Kronis'],
+        data['Tingkat_Pendidikan'],
+        data['Status_Kepemilikan_Rumah'],
+        data['Kehilangan_Mata_Pencaharian'],
+        data['Anggota_Keluarga_Rentan'],
+        data['Tidak_Menerima_Bantuan_Sosial'],
+        data['Rumah_Tangga_Lansia_Tunggal'],
+        data['Perempuan_Kepala_Keluarga'],
+    )
+
+    try:
+        # Menjalankan query dan commit perubahan
+        cursor.execute(sql, values)
+        conn.commit()
+        return jsonify({'message': 'Data berhasil disimpan!'}), 200
+    except Exception as e:
+        # Jika ada kesalahan, kembalikan pesan error
+        return jsonify({'error': str(e)}), 500
+    finally:
+        cursor.close()
+        conn.close()
 @app.route('/')
 def index():
     return render_template('index.html')

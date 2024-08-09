@@ -57,6 +57,8 @@ $(document).ready(function() {
         let tableBody = $('#data_latih');
         tableBody.empty();
 
+        $('#data_latih_count').text(data.length);
+
         let kategoriCounts = {};
 
         data.forEach((item, index) => {
@@ -92,6 +94,44 @@ $(document).ready(function() {
     });
 }
 
+
+function tambahDataLatih() {
+  let formData = $('#dataLatihForm').serialize(); // Mengambil data dari form
+
+  $.ajax({
+      url: 'http://127.0.0.1:5000/add_data_latih', // URL endpoint Flask
+      type: 'POST',
+      data: formData, // Data yang dikirimkan
+      success: function(response) {
+          alert('Data berhasil disimpan!');
+          $('#inputModal').modal('hide'); // Menutup modal setelah berhasil
+          // Anda dapat menambahkan fungsi untuk memperbarui tabel data latih di sini
+      },
+      error: function(response) {
+          alert('Terjadi kesalahan, data gagal disimpan.');
+      }
+  });
+}
+
+function tambahDataLatih() {
+  let formData = $('#dataUjiForm').serialize(); // Mengambil data dari form
+
+  $.ajax({
+      url: 'http://127.0.0.1:5000/add_data_uji', // URL endpoint Flask
+      type: 'POST',
+      data: formData, // Data yang dikirimkan
+      success: function(response) {
+          alert('Data berhasil disimpan!');
+          $('#inputModal').modal('hide'); // Menutup modal setelah berhasil
+          // Anda dapat menambahkan fungsi untuk memperbarui tabel data latih di sini
+      },
+      error: function(response) {
+          alert('Terjadi kesalahan, data gagal disimpan.');
+      }
+  });
+}
+
+
 function plotKategoriChart(kategoriCounts) {
     let kategori = Object.keys(kategoriCounts);
     let counts = Object.values(kategoriCounts);
@@ -119,6 +159,10 @@ function data_uji() {
   $.get('http://127.0.0.1:5000/data_uji', function(data) {
       let tableBody = $('#data_uji');
       tableBody.empty();
+
+      // Tampilkan jumlah data latih
+      $('#data_uji_count').text(data.length);
+
       data.forEach((item, index) => {
           tableBody.append(`
               <tr>
@@ -153,13 +197,25 @@ function formatRupiah(angka) {
 function loadAndPlotTestData() {
   $.get('http://127.0.0.1:5000/test', function(data) {
       let kategoriCounts = {};
+      let tableBody = $('#hasil_klasifikasi');
+      tableBody.empty(); // Kosongkan isi tabel sebelum menambahkan data baru
 
-      data.forEach((item) => {
+      data.forEach((item, index) => {
+          // Hitung jumlah per kategori
           if (kategoriCounts[item['Kategori Prediksi']]) {
               kategoriCounts[item['Kategori Prediksi']]++;
           } else {
               kategoriCounts[item['Kategori Prediksi']] = 1;
           }
+
+          // Tambahkan data ke tabel
+          tableBody.append(`
+              <tr>
+                  <td>${index + 1}</td>
+                  <td>${item['Nama_Keluarga']}</td>
+                  <td>${item['Kategori Prediksi']}</td>
+              </tr>
+          `);
       });
 
       let kategori = Object.keys(kategoriCounts);

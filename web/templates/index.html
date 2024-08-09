@@ -3,12 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-
-
-
     <title>Admin Dashboard</title>
   </head>
   <body>
@@ -18,110 +14,110 @@
           <h3>Admin Dashboard</h3>
         </div>
         <ul class="list-unstyled components">
-          <li><a href="#" id="dataLatihLink">Data Latih</a></li>
-          <li><a href="#" id="dataUjiLink">Data Uji</a></li>
+          <li><a href="#" id="dataLatihLink" data-toggle="modal" data-target="#inputModal">Tambah Data Latih</a></li>
+          <li><a href="#" id="dataUjiLink" data-toggle="modal" data-target="#inputModalDataUji">Tambah Data Uji</a></li>
         </ul>
       </nav>
-
       <div id="content" class="content">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
             <button type="button" id="sidebarCollapse" class="btn btn-info">
-              <i class="fas fa-align-left"></i>
-              <span>Toggle Sidebar</span>
+            <i class="fas fa-align-left"></i>
+            <span>Toggle Sidebar</span>
             </button>
           </div>
         </nav>
-
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5>Jumlah Data Latih</h5>
-                        <div class="text-right">
-                            <h2><span id="jumlah_data_latih"></span>21</h2>
-                        </div>
-                    </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5>Jumlah Data Latih</h5>
+                  <div class="text-right">
+                    <h2><span id="data_latih_count"></span><sub> Data</sub></h2>
+                  </div>
                 </div>
+              </div>
             </div>
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5>Jumlah Data Uji</h5>
-                        <div class="text-right">
-                            <h2><span id="jumlah_data_uji"></span>21</h2>
-                        </div>
-                    </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5>Jumlah Data Uji</h5>
+                  <div class="text-right">
+                    <h2><span id="data_uji_count"></span><sub> Data</sub></h2>
+                  </div>
                 </div>
+              </div>
             </div>
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Kategori Data Latih</h4>
-                        <div id="dataLatihChart" style="height: 500px;"></div> 
-                    </div>
+              <div class="card">
+                <div class="card-body">
+                  <h4>Kategori Data Latih</h4>
+                  <div id="dataLatihChart" style="height: 500px;"></div>
                 </div>
+              </div>
             </div>
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Kategori Hasil Klasifikasi</h4>
-                        <div id="hasilKlasifikasi" style="height: 500px;"></div> 
-                    </div>
+              <div class="card">
+                <div class="card-body">
+                  <div class="text-right">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Tampilkan Hasil Klasifikasi
+                    </button>
+                  </div>
+                  <br>
+                  <h4>Kategori Hasil Klasifikasi</h4>
+                  <div id="hasilKlasifikasi" style="height: 500px;"></div>
                 </div>
+              </div>
             </div>
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Hyperplane SVM</h4>
-                        <div class="text-right">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                Tampilkan Feature Importance
-                              </button>
-                        </div>
-                        <img src="{{ url_for('static', filename='graph/training_svm_decision_boundary.png') }}" alt="" width="100%">
-                    </div>
+              <div class="card">
+                <div class="card-body">
+                  <h4>Hyperplane SVM</h4>
+                  
+                  <img src="{{ url_for('static', filename='graph/training_svm_decision_boundary.png') }}" alt="" width="100%">
                 </div>
+              </div>
             </div>
             <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Confusion Matrix</h4>
-                        <img src="{{ url_for('static', filename='graph/training_cm.png') }}" alt="" width="100%">
-                    </div>
+              <div class="card">
+                <div class="card-body">
+                  <h4>Confusion Matrix</h4>
+                  <img src="{{ url_for('static', filename='graph/training_cm.png') }}" alt="" width="100%">
                 </div>
+              </div>
             </div>
             <div class="col-lg-12">
-            
-            <br>
+              
+              <br>
               <div id="dataTable" class="table-responsive">
                 <h4>Data Latih</h4>
                 <table class="table table-striped table-bordered">
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>Nama Keluarga</th>
-                        <th>Alamat</th>
-                        <th>Kabupaten</th>
-                        <th>Kecamatan</th>
-                        <th>Pendapatan Per Bulan</th>
-                        <th>Jenis Pekerjaan</th>
-                        <th>Riwayat Penyakit Kronis</th>
-                        <th>Tingkat Pendidikan</th>
-                        <th>Status Kepemilikan Rumah</th>
-                        <th>Kehilangan Mata Pencaharian</th>
-                        <th>Anggota Keluarga Rentan</th>
-                        <th>Tidak Menerima Bantuan Sosial</th>
-                        <th>Rumah Tangga Lansia Tunggal</th>
-                        <th>Perempuan Kepala Keluarga</th>
-                        <th>Kategori</th>
-                      </tr>
-                    </thead>
-                    <tbody id="data_latih">
-                      <!-- Data dari API akan ditampilkan di sini -->
-                    </tbody>
-                  </table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Nama Keluarga</th>
+                      <th>Alamat</th>
+                      <th>Kabupaten</th>
+                      <th>Kecamatan</th>
+                      <th>Pendapatan Per Bulan</th>
+                      <th>Jenis Pekerjaan</th>
+                      <th>Riwayat Penyakit Kronis</th>
+                      <th>Tingkat Pendidikan</th>
+                      <th>Status Kepemilikan Rumah</th>
+                      <th>Kehilangan Mata Pencaharian</th>
+                      <th>Anggota Keluarga Rentan</th>
+                      <th>Tidak Menerima Bantuan Sosial</th>
+                      <th>Rumah Tangga Lansia Tunggal</th>
+                      <th>Perempuan Kepala Keluarga</th>
+                      <th>Kategori</th>
+                    </tr>
+                  </thead>
+                  <tbody id="data_latih">
+                    <!-- Data dari API akan ditampilkan di sini -->
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -131,29 +127,29 @@
               <div id="dataTable" class="table-responsive">
                 <h4>Data Uji</h4>
                 <table class="table table-striped table-bordered">
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>Nama Keluarga</th>
-                        <th>Alamat</th>
-                        <th>Kabupaten</th>
-                        <th>Kecamatan</th>
-                        <th>Pendapatan Per Bulan</th>
-                        <th>Jenis Pekerjaan</th>
-                        <th>Riwayat Penyakit Kronis</th>
-                        <th>Tingkat Pendidikan</th>
-                        <th>Status Kepemilikan Rumah</th>
-                        <th>Kehilangan Mata Pencaharian</th>
-                        <th>Anggota Keluarga Rentan</th>
-                        <th>Tidak Menerima Bantuan Sosial</th>
-                        <th>Rumah Tangga Lansia Tunggal</th>
-                        <th>Perempuan Kepala Keluarga</th>
-                      </tr>
-                    </thead>
-                    <tbody id="data_uji">
-                      <!-- Data dari API akan ditampilkan di sini -->
-                    </tbody>
-                  </table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Nama Keluarga</th>
+                      <th>Alamat</th>
+                      <th>Kabupaten</th>
+                      <th>Kecamatan</th>
+                      <th>Pendapatan Per Bulan</th>
+                      <th>Jenis Pekerjaan</th>
+                      <th>Riwayat Penyakit Kronis</th>
+                      <th>Tingkat Pendidikan</th>
+                      <th>Status Kepemilikan Rumah</th>
+                      <th>Kehilangan Mata Pencaharian</th>
+                      <th>Anggota Keluarga Rentan</th>
+                      <th>Tidak Menerima Bantuan Sosial</th>
+                      <th>Rumah Tangga Lansia Tunggal</th>
+                      <th>Perempuan Kepala Keluarga</th>
+                    </tr>
+                  </thead>
+                  <tbody id="data_uji">
+                    <!-- Data dari API akan ditampilkan di sini -->
+                  </tbody>
+                </table>
               </div>
               
             </div>
@@ -162,32 +158,335 @@
       </div>
     </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" >
-          <div class="modal-content" style="width: 900px;">
+      <div class="modal-dialog" >
+        <div class="modal-content" style="max-width: 900px;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Koefisien Importance dan Hasil Klasifikasi</h5>
+            
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <small>Semakin TInggi Semakin Berpengaruh Pada Penilaian Klasifikasi (Kelayakan)</small>
+            <img src="{{ url_for('static', filename='graph/training_feature_importance.png') }}" alt="" width="100%">
+            <br>
+            <div class="dataTable">
+              <h4>Hasil Klasifikasi</h4>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Nama Keluarga</th>
+                    <th>Kategori Prediksi</th>
+                  </tr>
+                </thead>
+                <tbody id="hasil_klasifikasi">
+                  <!-- Data hasil klasifikasi akan ditampilkan di sini -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="inputModal" tabindex="-1" aria-labelledby="inputModalLabel" aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 900px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="inputModalLabel">Masukkan Data Latih</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="dataLatihForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="namaKeluarga">Nama Keluarga</label>
+                    <input type="text" class="form-control" id="namaKeluarga" name="Nama_Keluarga" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="alamat">Alamat</label>
+                    <input type="text" class="form-control" id="alamat" name="Alamat" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="kabupaten">Kabupaten</label>
+                    <select class="form-control" id="kabupaten" name="Kabupaten" required>
+                      <option value="">Pilih Kabupaten</option>
+                      <option value="Aceh Utara">Aceh Utara</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="kecamatan">Kecamatan</label>
+                    <select class="form-control" id="kecamatan" name="Kecamatan" required>
+                      <option value="">Pilih Kecamatan</option>
+                      <option value="Matangkuli">Matangkuli</option>
+                      <option value="Baktiya">Baktiya</option>
+                      <option value="Nibong">Nibong</option>
+                      <option value="Samudera">Samudera</option>
+                      <option value="Dewantara">Dewantara</option>
+                      <option value="Lhoksukon">Lhoksukon</option>
+                      <option value="Tanah Jambo Aye">Tanah Jambo Aye</option>
+                      <option value="Tanah Luas">Tanah Luas</option>
+                      <option value="Syamtalira Bayu">Syamtalira Bayu</option>
+                      <option value="Sawang">Sawang</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="pendapatanPerBulan">Pendapatan Per Bulan</label>
+                    <input type="number" class="form-control" id="pendapatanPerBulan" name="Pendapatan_Per_Bulan" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="jenisPekerjaan">Jenis Pekerjaan</label>
+                    <select class="form-control" id="jenisPekerjaan" name="Jenis_Pekerjaan" required>
+                      <option value="">Pilih Jenis Pekerjaan</option>
+                      <option value="Petani">Petani</option>
+                      <option value="Pedagang">Pedagang</option>
+                      <option value="Ibu Rumah Tangga">Ibu Rumah Tangga</option>
+                      <option value="Tukang">Tukang</option>
+                      <option value="Buruh">Buruh</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="riwayatPenyakitKronis">Riwayat Penyakit Kronis</label>
+                    <select class="form-control" id="riwayatPenyakitKronis" name="Riwayat_Penyakit_Kronis" required>
+                      <option value="">Pilih Riwayat Penyakit Kronis</option>
+                      <option value="Tidak">Tidak</option>
+                      <option value="Ya">Ya</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="tingkatPendidikan">Tingkat Pendidikan</label>
+                    <select class="form-control" id="tingkatPendidikan" name="Tingkat_Pendidikan" required>
+                      <option value="">Pilih Tingkat Pendidikan</option>
+                      <option value="SD">SD</option>
+                      <option value="SMP">SMP</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="statusKepemilikanRumah">Status Kepemilikan Rumah</label>
+                    <select class="form-control" id="statusKepemilikanRumah" name="Status_Kepemilikan_Rumah" required>
+                      <option value="">Pilih Status Kepemilikan Rumah</option>
+                      <option value="Sewa">Sewa</option>
+                      <option value="Milik Sendiri">Milik Sendiri</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="kehilanganMataPencaharian">Kehilangan Mata Pencaharian</label>
+                    <select class="form-control" id="kehilanganMataPencaharian" name="Kehilangan_Mata_Pencaharian" required>
+                      <option value="">Pilih Kehilangan Mata Pencaharian</option>
+                      <option value="Ya">Ya</option>
+                      <option value="Tidak">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="anggotaKeluargaRentan">Anggota Keluarga Rentan</label>
+                    <select class="form-control" id="anggotaKeluargaRentan" name="Anggota_Keluarga_Rentan" required>
+                      <option value="">Pilih Anggota Keluarga Rentan</option>
+                      <option value="Ya">Ya</option>
+                      <option value="Tidak">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="tidakMenerimaBantuanSosial">Tidak Menerima Bantuan Sosial</label>
+                    <select class="form-control" id="tidakMenerimaBantuanSosial" name="Tidak_Menerima_Bantuan_Sosial" required>
+                      <option value="">Pilih Tidak Menerima Bantuan Sosial</option>
+                      <option value="Ya">Ya</option>
+                      <option value="Tidak">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="rumahTanggaLansiaTunggal">Rumah Tangga Lansia Tunggal</label>
+                    <select class="form-control" id="rumahTanggaLansiaTunggal" name="Rumah_Tangga_Lansia_Tunggal" required>
+                      <option value="">Pilih Rumah Tangga Lansia Tunggal</option>
+                      <option value="Tidak">Tidak</option>
+                      <option value="Ya">Ya</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="perempuanKepalaKeluarga">Perempuan Kepala Keluarga</label>
+                    <select class="form-control" id="perempuanKepalaKeluarga" name="Perempuan_Kepala_Keluarga" required>
+                      <option value="">Pilih Perempuan Kepala Keluarga</option>
+                      <option value="Tidak">Tidak</option>
+                      <option value="Ya">Ya</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="kategori">Kategori</label>
+                    <select class="form-control" id="perempuanKepalaKeluarga" name="kategori" required>
+                      <option value="">Pilih Kategori</option>
+                      <option value="Miskin">Miskin</option>
+                      <option value="Miskin Ekstrim">Miskin Ekstrim</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+            <button type="submit" class="btn btn-primary" id="submitData">Simpan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="inputModalDataUji" tabindex="-1" aria-labelledby="inputModalDataUji" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 900px;">
+          <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Koefisien Importance</h5>
-              
-              
+              <h5 class="modal-title" id="inputModalLabel">Masukkan Data Uji</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-                <small>Semakin TInggi Semakin Berpengaruh Pada Penilaian Klasifikasi (Kelayakan)</small>
-              <img src="{{ url_for('static', filename='graph/training_feature_importance.png') }}" alt="" width="100%">
+              <form id="dataUjiForm">
+                <div class="row">
+                    <div class="col-md-6">  
+                        <div class="form-group">
+                            <label for="namaKeluarga">Nama Keluarga</label>
+                            <input type="text" class="form-control" id="namaKeluarga" name="Nama_Keluarga" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="alamat">Alamat</label>
+                            <input type="text" class="form-control" id="alamat" name="Alamat" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="kabupaten">Kabupaten</label>
+                            <select class="form-control" id="kabupaten" name="Kabupaten" required>
+                              <option value="">Pilih Kabupaten</option>
+                              <option value="Aceh Utara">Aceh Utara</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="kecamatan">Kecamatan</label>
+                            <select class="form-control" id="kecamatan" name="Kecamatan" required>
+                              <option value="">Pilih Kecamatan</option>
+                              <option value="Matangkuli">Matangkuli</option>
+                              <option value="Baktiya">Baktiya</option>
+                              <option value="Nibong">Nibong</option>
+                              <option value="Samudera">Samudera</option>
+                              <option value="Dewantara">Dewantara</option>
+                              <option value="Lhoksukon">Lhoksukon</option>
+                              <option value="Tanah Jambo Aye">Tanah Jambo Aye</option>
+                              <option value="Tanah Luas">Tanah Luas</option>
+                              <option value="Syamtalira Bayu">Syamtalira Bayu</option>
+                              <option value="Sawang">Sawang</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="pendapatanPerBulan">Pendapatan Per Bulan</label>
+                            <input type="number" class="form-control" id="pendapatanPerBulan" name="Pendapatan_Per_Bulan" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="jenisPekerjaan">Jenis Pekerjaan</label>
+                            <select class="form-control" id="jenisPekerjaan" name="Jenis_Pekerjaan" required>
+                              <option value="">Pilih Jenis Pekerjaan</option>
+                              <option value="Petani">Petani</option>
+                              <option value="Pedagang">Pedagang</option>
+                              <option value="Ibu Rumah Tangga">Ibu Rumah Tangga</option>
+                              <option value="Tukang">Tukang</option>
+                              <option value="Buruh">Buruh</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="riwayatPenyakitKronis">Riwayat Penyakit Kronis</label>
+                            <select class="form-control" id="riwayatPenyakitKronis" name="Riwayat_Penyakit_Kronis" required>
+                              <option value="">Pilih Riwayat Penyakit Kronis</option>
+                              <option value="Tidak">Tidak</option>
+                              <option value="Ya">Ya</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="tingkatPendidikan">Tingkat Pendidikan</label>
+                            <select class="form-control" id="tingkatPendidikan" name="Tingkat_Pendidikan" required>
+                              <option value="">Pilih Tingkat Pendidikan</option>
+                              <option value="SD">SD</option>
+                              <option value="SMP">SMP</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="statusKepemilikanRumah">Status Kepemilikan Rumah</label>
+                            <select class="form-control" id="statusKepemilikanRumah" name="Status_Kepemilikan_Rumah" required>
+                              <option value="">Pilih Status Kepemilikan Rumah</option>
+                              <option value="Sewa">Sewa</option>
+                              <option value="Milik Sendiri">Milik Sendiri</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="kehilanganMataPencaharian">Kehilangan Mata Pencaharian</label>
+                            <select class="form-control" id="kehilanganMataPencaharian" name="Kehilangan_Mata_Pencaharian" required>
+                              <option value="">Pilih Kehilangan Mata Pencaharian</option>
+                              <option value="Ya">Ya</option>
+                              <option value="Tidak">Tidak</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="anggotaKeluargaRentan">Anggota Keluarga Rentan</label>
+                            <select class="form-control" id="anggotaKeluargaRentan" name="Anggota_Keluarga_Rentan" required>
+                              <option value="">Pilih Anggota Keluarga Rentan</option>
+                              <option value="Ya">Ya</option>
+                              <option value="Tidak">Tidak</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="tidakMenerimaBantuanSosial">Tidak Menerima Bantuan Sosial</label>
+                            <select class="form-control" id="tidakMenerimaBantuanSosial" name="Tidak_Menerima_Bantuan_Sosial" required>
+                              <option value="">Pilih Tidak Menerima Bantuan Sosial</option>
+                              <option value="Ya">Ya</option>
+                              <option value="Tidak">Tidak</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="rumahTanggaLansiaTunggal">Rumah Tangga Lansia Tunggal</label>
+                            <select class="form-control" id="rumahTanggaLansiaTunggal" name="Rumah_Tangga_Lansia_Tunggal" required>
+                              <option value="">Pilih Rumah Tangga Lansia Tunggal</option>
+                              <option value="Tidak">Tidak</option>
+                              <option value="Ya">Ya</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="perempuanKepalaKeluarga">Perempuan Kepala Keluarga</label>
+                            <select class="form-control" id="perempuanKepalaKeluarga" name="Perempuan_Kepala_Keluarga" required>
+                              <option value="">Pilih Perempuan Kepala Keluarga</option>
+                              <option value="Tidak">Tidak</option>
+                              <option value="Ya">Ya</option>
+                            </select>
+                          </div>
+                    </div>
+                </div>
+                
+                
+              </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+              <button type="submit" class="btn btn-primary" id="submitData">Simpan</button>
             </div>
           </div>
         </div>
-      </div>
+    </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
