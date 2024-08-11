@@ -104,7 +104,7 @@ function tambahDataLatih() {
       data: formData, // Data yang dikirimkan
       success: function(response) {
           alert('Data berhasil disimpan!');
-          $('#inputModal').modal('hide'); // Menutup modal setelah berhasil
+          $('#dataLatihForm').modal('hide'); // Menutup modal setelah berhasil
           // Anda dapat menambahkan fungsi untuk memperbarui tabel data latih di sini
       },
       error: function(response) {
@@ -113,7 +113,7 @@ function tambahDataLatih() {
   });
 }
 
-function tambahDataLatih() {
+function tambahDataUji() {
   let formData = $('#dataUjiForm').serialize(); // Mengambil data dari form
 
   $.ajax({
@@ -122,7 +122,7 @@ function tambahDataLatih() {
       data: formData, // Data yang dikirimkan
       success: function(response) {
           alert('Data berhasil disimpan!');
-          $('#inputModal').modal('hide'); // Menutup modal setelah berhasil
+          $('#inputModalDataUji').modal('hide'); // Menutup modal setelah berhasil
           // Anda dapat menambahkan fungsi untuk memperbarui tabel data latih di sini
       },
       error: function(response) {
