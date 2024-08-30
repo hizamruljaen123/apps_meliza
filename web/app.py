@@ -46,7 +46,7 @@ def load_and_prepare_training_data():
         df[col] = le.fit_transform(df[col])
         label_encoders[col] = le
     X = df.drop(columns=['id', 'Nama_Keluarga', 'Alamat', 'Kabupaten', 'Kecamatan', 'Kategori'])
-    y = df['Kategori'].apply(lambda x: 1 if x == 'Miskin Ekstrim' else 0)
+    y = df['Kategori'].apply(lambda x: 1 if x == 'Layak' else 0)
     return X, y, df
 
 def load_and_prepare_test_data():
@@ -139,7 +139,7 @@ def visualize_results(cm, accuracy, predictions, X_test, y_test, df, model, scal
     
     # Add legend
     handles, labels = scatter.legend_elements()
-    plt.legend(handles, ['Miskin', 'Miskin Ekstrim'], loc="upper right", title="Kategori")
+    plt.legend(handles, ['Layak', 'Tidak Layak'], loc="upper right", title="Kategori")
     
     plt.tight_layout()
     plt.savefig(os.path.join(GRAPH_PATH, f'{file_name}_svm_decision_boundary.png'))
@@ -191,7 +191,7 @@ def test():
     scaler = joblib.load(SCALER_PATH)
     X_test_new, test_df = load_and_prepare_test_data()
     predictions = test_model(model, scaler, X_test_new)
-    test_df['Kategori Prediksi'] = ['Miskin Ekstrim' if pred == 1 else 'Miskin' for pred in predictions]
+    test_df['Kategori Prediksi'] = ['Layak' if pred == 1 else 'Tidak Layak' for pred in predictions]
     return jsonify(test_df[['Nama_Keluarga', 'Kategori Prediksi']].to_dict(orient='records'))
 
 @app.route('/data_latih', methods=['GET'])
